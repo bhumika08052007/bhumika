@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+    <title>Document</title>
+</head>
+  <body>
+       <h1 id="ch" ondblclick="fn()">welcome to my page</h1>
+    <p class="text" onmousemove="changcolor()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque sapiente ex nihil ea iusto a, distinctio veritatis. Consequuntur porro autem pariatur distinctio fugiat, illo, blanditiis deserunt minus ut veritatis impedit.</p>
+   <button><p class="text" onmouseout="changcolor2()">click me</p></button>
+    
+    <script>
+        function fn(){
+        let ele=document.getElementById('ch')
+        ele.innerHTML="aje nai kale avjo!!"
+        } 
+        function changcolor(){
+        let element=document.getElementsByClassName('text')
+        element[0].style.color="blue";
+        element[0].style.fontSize="50px";
+      
+        }
+        function changcolor2(){
+            let element=document.getElementsByClassName('text')
+            
+            element[1].style.color="pink";
+            }
+            </script>
+</body>
+</html>
